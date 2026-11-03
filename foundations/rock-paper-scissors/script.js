@@ -1,7 +1,9 @@
-let humanScore = 0;
-let computerScore = 0;
-let round = 0;
-let tie = 0;
+const score = {
+  humanScore: 0,
+  computerScore: 0,
+  tie: 0,
+  round: 0
+};
 
 function getComputerChoice() {
   let computerChoice = Math.floor(Math.random() * 3);
@@ -30,52 +32,52 @@ function displayResult(result = 'Tie', humanChoice, computerChoice) {
     console.log(`
 You Choose ${humanChoice} and Computer Choose ${computerChoice}\n
 Match Tie\n
-Computer Score : ${computerScore}\n
-Your Score : ${humanScore}\n
-Tie : ${tie}\n
-Total Match : ${round}
+Computer Score : ${score.computerScore}\n
+Your Score : ${score.humanScore}\n
+Tie : ${score.tie}\n
+Total Match : ${score.round}
 `);
   } else {
     console.log(`
 ${computerChoice} beats ${humanChoice}\n
 ${result} Win\n
-Computer Score : ${computerScore}\n
-Your Score : ${humanScore}\n
-Tie : ${tie}\n
-Total Match : ${round}
+Computer Score : ${score.computerScore}\n
+Your Score : ${score.humanScore}\n
+Tie : ${score.tie}\n
+Total Match : ${score.round}
 `);
   }
 }
 
 function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
-    round++;
-    tie++;
+    score.round++;
+    score.tie++;
     displayResult(humanChoice, computerChoice);
   } else if (humanChoice === "rock" && computerChoice === "paper") {
-    round++;
-    computerScore++;
+    score.round++;
+    score.computerScore++;
     displayResult("Computer", humanChoice, computerChoice);
   } else if (humanChoice === "paper" && computerChoice === "scissors") {
-    round++;
-    computerScore++;
+    score.round++;
+    score.computerScore++;
     displayResult("Computer", humanChoice, computerChoice);
   } else if (humanChoice === "scissors" && computerChoice === "rock") {
-    round++;
-    computerScore++;
+    score.round++;
+    score.computerScore++;
     displayResult("Computer", humanChoice, computerChoice);
   } else {
-    round++;
-    humanScore++;
+    score.round++;
+    score.humanScore++;
     displayResult("You", humanChoice, computerChoice);
   }
 }
 
 function resetGame() {
-  humanScore = 0;
-  computerScore = 0;
-  round = 0;
-  tie = 0;
+  score.humanScore = 0;
+  score.computerScore = 0;
+  score.round = 0;
+  score.tie = 0;
 
   console.log("Game Reset Successfully!");
 }
