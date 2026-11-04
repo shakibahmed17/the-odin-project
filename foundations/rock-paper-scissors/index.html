@@ -7,26 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Rock, Paper and Scissors Game</h1>
+    <h1 class="game-title">Rock Paper Scissors</h1>
 
-    <button onclick="playRound(getHumanChoice(1), getComputerChoice())">
-        Rock
-    </button>
+    <div class="round-info">
+        <p class="round-text">Round Left</p>
+        <p class="round-left"></p>
+    </div>
 
-    <button onclick="playRound(getHumanChoice(2), getComputerChoice())">
-        Paper
-    </button>
+    <div class="options">
+        <button class="option" onclick="playRound('Rock')">
+        <img class="emoji" src="assets/rock.png" alt="Rock Emoji">
+        </button>
 
-    <button onclick="playRound(getHumanChoice(3), getComputerChoice())">
-        Scissors
-    </button>
+        <button class="option" onclick="playRound('Paper')">
+            <img class="emoji" src="assets/paper.png" alt="Paper Emoji">
+        </button>
 
-    <button onclick="resetGame()">
-        Reset Game
-    </button>
+        <button class="option" onclick="playRound('Scissors')">
+            <img class="emoji" src="assets/scissors.png" alt="Scissors Emoji">
+        </button>
+    </div>
+    <br>
 
+    <div class="scoreboard">
+        <div class="score player-part">
+            <p class="win-text">You Win</p>
+            <p class="player-score"></p>
+        </div>
+        <div class="score tie-part">
+            <p class="win-text">Tie</p>
+            <p class="tie-score"></p>
+        </div>
+        <div class="score computer-part">
+            <p class="win-text">Computer Win</p>
+            <p class="computer-score"></p>
+        </div>
+    </div>
+
+    <p class="round-result"></p>
+    <p class="final-result"></p>
+
+    <div class="reset">
+        <button class="reset-btn" onclick="resetGame()">
+            Reset Game
+        </button>
+    </div>
     <p class="reset-text"></p>
-    <p class="scoreboard-text"></p>
 
     <script src="script.js"></script>
 </body>
