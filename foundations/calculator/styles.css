@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(63, 57, 57);
+    
+}
+
+.head-bar {
+    align-items: center;
+    background-color: rgb(238, 167, 36);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.main-calculator{
+    background-color: black;
+    width: 460px;
+    height: 600px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: black;
+    border: 3px solid rgb(63, 57, 57);
+    height: 80px;
+    border-radius: 16px;
+}
+
+.buttons {
+    border: 3px solid rgb(63, 57, 57);
+    border-radius: 24px;
+    height: 100%;
+    padding-top: 30px;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 22px;
+}
+
+.calculator-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.add,
+.equal,
+.point,
+.zero,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.mod,
+.sqrt,
+.multiply,
+.divide,
+.sub {
+    background-color: rgb(45, 42, 42);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: opacity 0.15s;
+}
+
+.delete,
+.clear {
+    background-color: rgb(105, 94, 94);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: opacity 0.15s;
+}
+
+.add:hover,
+.equal:hover,
+.point:hover,
+.zero:hover,
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.mod:hover,
+.sqrt:hover,
+.multiply:hover,
+.divide:hover,
+.sub:hover,
+.delete:hover,
+.clear:hover{
+    opacity: 0.8;
+}
+
+.add:active,
+.equal:active,
+.point:active,
+.zero:active,
+.one:active,
+.two:active,
+.three:active,
+.four:active,
+.five:active,
+.six:active,
+.seven:active,
+.eight:active,
+.nine:active,
+.mod:active,
+.sqrt:active,
+.multiply:active,
+.divide:active,
+.sub:active,
+.delete:active,
+.clear:active{
+    opacity: 0.6; 
+}
