@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main">
+        <div class="left-side">
+            <div class="odin-section">
+                <img class="odin-logo" src="assets/odin-lined.png" alt="odin logo">
+                <p class="odin-title">ODIN</p>
+            </div>
+
+            <p class="credit">
+                Photo by <a href="https://unsplash.com/@xteemu" noreferrer noopener>Teemu Paananen</a> on <a href="https://unsplash.com/photos/photo-of-green-fern-plant-OOE4xAnBhKo" noreferrer noopener>Unsplash</a>
+            </p>
+        </div>
+        <div class="right-side">
+            <div class="intro-section">
+                <p class="intro-text">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    <br>Sign up <em>now</em> to get started.
+                </p>
+                <p class="intro-text">You <em>know</em> you want to.</p>
+            </div>
+
+            <form action="#" method="post" class="signup-form">
+                <div class="form-section">
+                    <h2 class="form-title">Let's do this!</h2>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name">
+                        </div>
+                        <div class="input-group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" id="phone_number" name="phone_number">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <button type="submit" class="submit-btn">Create Account</button>
+                    <p class="login-prompt">Already have an account? <a href="https://www.theodinproject.com/">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
