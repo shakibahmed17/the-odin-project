@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-window">
+        <aside class="side-bar">
+            <ul class="nav-list">
+                <li class="nav-one">
+                    <img class="dashboard-icon" src="assets/icons/dashboard.svg" alt="Dashboard">
+                    <span class="dashboard-text">Dashboard</span>
+                </li>
+                <li><img class="nav-icon" src="assets/icons/home.svg" alt="Home">Home</li>
+                <li><img class="nav-icon" src="assets/icons/profile.svg" alt="Profile">Profile</li>
+                <li><img class="nav-icon" src="assets/icons/message.svg" alt="Messages">Messages</li>
+                <li><img class="nav-icon" src="assets/icons/history.svg" alt="History">History</li>
+                <li><img class="nav-icon" src="assets/icons/tasks.svg" alt="Tasks">Tasks</li>
+                <li><img class="nav-icon" src="assets/icons/community.svg" alt="Communities">Communities</li>
+                <li class="nav-two"><img class="nav-icon" src="assets/icons/setting.svg" alt="Settings">Settings</li>
+                <li><img class="nav-icon" src="assets/icons/support.svg" alt="Support">Support</li>
+                <li><img class="nav-icon" src="assets/icons/privacy.svg" alt="Privacy">Privacy</li>
+            </ul>
+        </aside>
+
+        <div class="main">
+            <header class="header">
+                <div class="up-head">
+                    <div class="up-head-left">
+                        <img class="search-icn" src="assets/icons/search.svg" alt="Search">
+                        <input type="text" class="search-input" placeholder="Search">
+                    </div>
+                    <div class="up-head-right">
+                        <img class="bell-icn" src="assets/icons/bell-ring.svg" alt="Notifications">
+                        <img class="user-profile" src="assets/users/user-2.jpg" alt="User Profile">
+                        <span class="user-name">Shakib Ahmed</span>
+                    </div>
+                </div>
+
+                <div class="down-head">
+                    <div class="down-head-left">
+                        <img class="user-avatar-large" src="assets/users/user-2.jpg" alt="User Profile">
+                        <div class="user-greeting">
+                            <span class="greeting-sub">Hi there,</span>
+                            <span class="greeting-main">Shakib Ahmed (@shakibahmed17)</span>
+                        </div>
+                    </div>
+                    <div class="down-head-right">
+                        <button class="header-btn">New</button>
+                        <button class="header-btn">Upload</button>
+                        <button class="header-btn">Share</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main-hero">
+                <section class="projects-section">
+                    <h2 class="section-heading">My Simple Odin Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Calculator Web App</h3>
+                                <p class="card-text">Minimalist browser calculator featuring responsive CSS grid buttons, decimal precision, and clean state management operations.</p>
+                            </div>
+                            <div class="card-actions">
+                                <img src="assets/icons/star-plus.svg" alt="Star">
+                                <img src="assets/icons/eye-plus.svg" alt="Watch">
+                                <img src="assets/icons/branch.svg" alt="Fork">
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Etch-a-Sketch Studio</h3>
+                                <p class="card-text">Interactive sketchpad allowing users to draw dynamic pixel grids with customizable row and column dimensions.</p>
+                            </div>
+                            <div class="card-actions">
+                                <img src="assets/icons/star-plus.svg" alt="Star">
+                                <img src="assets/icons/eye-plus.svg" alt="Watch">
+                                <img src="assets/icons/branch.svg" alt="Fork">
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Rock Paper Scissors</h3>
+                                <p class="card-text">Classic arcade browser game built with JavaScript conditional logic, dynamic scoring, and instant round tracking.</p>
+                            </div>
+                            <div class="card-actions">
+                                <img src="assets/icons/star-plus.svg" alt="Star">
+                                <img src="assets/icons/eye-plus.svg" alt="Watch">
+                                <img src="assets/icons/branch.svg" alt="Fork">
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Sign-up Landing Form</h3>
+                                <p class="card-text">Sleek authentication interface featuring client-side form validation, modern typography, and structured two-column layout.</p>
+                            </div>
+                            <div class="card-actions">
+                                <img src="assets/icons/star-plus.svg" alt="Star">
+                                <img src="assets/icons/eye-plus.svg" alt="Watch">
+                                <img src="assets/icons/branch.svg" alt="Fork">
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Weather Radar App</h3>
+                                <p class="card-text">Real-time weather dashboard fetching live temperature forecasts and atmospheric metrics via third-party REST APIs.</p>
+                            </div>
+                            <div class="card-actions">
+                                <img src="assets/icons/star-plus.svg" alt="Star">
+                                <img src="assets/icons/eye-plus.svg" alt="Watch">
+                                <img src="assets/icons/branch.svg" alt="Fork">
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Task Planner Board</h3>
+                                <p class="card-text">Kanban-style productivity board allowing users to organize daily sprints, track deadlines, and manage tasks.</p>
+                            </div>
+                            <div class="card-actions">
+                                <img src="assets/icons/star-plus.svg" alt="Star">
+                                <img src="assets/icons/eye-plus.svg" alt="Watch">
+                                <img src="assets/icons/branch.svg" alt="Fork">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="side-content">
+                    <section class="announcements-section">
+                        <h2 class="section-heading">Announcements</h2>
+                        <div class="info-card announcements-card">
+                            <div class="announcement-item">
+                                <h4 class="announcement-title">Scheduled Server Maintenance</h4>
+                                <p class="announcement-text">Cloud databases will undergo performance tuning this Saturday between 02:00 UTC and 04:00 UTC.</p>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="announcement-item">
+                                <h4 class="announcement-title">Open Source Showcase Day</h4>
+                                <p class="announcement-text">Submit your latest full-stack community projects by Friday for a chance to be featured.</p>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="announcement-item">
+                                <h4 class="announcement-title">Security Policy Update</h4>
+                                <p class="announcement-text">Multi-factor authentication is now required across all developer accounts to improve system login security.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Trending -->
+                    <section class="trending-section">
+                        <h2 class="section-heading">Trending</h2>
+                        <div class="info-card trending-card">
+                            <div class="trending-item">
+                                <img class="trending-avatar" src="assets/users/user-2.jpg" alt="User Profile">
+                                <div class="trending-details">
+                                    <span class="trending-handle">@shakibahmed17</span>
+                                    <span class="trending-desc">World Peace Builder</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img class="trending-avatar" src="assets/users/user-3.jpg" alt="User Profile">
+                                <div class="trending-details">
+                                    <span class="trending-handle">@harrykane09</span>
+                                    <span class="trending-desc">Super Cool Project</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img class="trending-avatar" src="assets/users/user-4.jpg" alt="User Profile">
+                                <div class="trending-details">
+                                    <span class="trending-handle">@leomessi10</span>
+                                    <span class="trending-desc">Life Changing App</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img class="trending-avatar" src="assets/users/user-1.jpg" alt="User Profile">
+                                <div class="trending-details">
+                                    <span class="trending-handle">@cristianoronaldo07</span>
+                                    <span class="trending-desc">No Traffic Maker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
